@@ -33,3 +33,16 @@ let sumOfNumbers = 0
     sumOfNumbers += numbers [i]
 }
     console.log(`The sum of numbers is ${sumOfNumbers}`)
+
+// =========================================================================================================
+
+const array1 = [1, 3, 6, 7, 8, 9]
+
+for(let i = 0; i < array1.length; i++){
+    const currentElement = array1[i]
+    console.log(`The current element in index ${i} is ${currentElement}`)
+}
+console.log(`==================================================`)
+    array1.map((element, index) => {
+        console.log(`The element in index ${index} is ${element}`)
+    })
