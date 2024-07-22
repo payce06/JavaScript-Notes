@@ -50,3 +50,21 @@ function sayHi(name){
 for(let i = 0; i < mlbTeams.length; i++){
     sayHi(mlbTeams[i])
 }
+
+console.log(`============================================================================`)
+
+function findMax(a, b, c, d){
+    if(a < b && b > c && b > d){
+        return b
+    } else if(b < a && a > c && a > d){
+        return a
+    } else if(b < c && c > a && c > d){
+        return c
+    } else {
+        return d
+    }
+}
+const maxNumber = findMax(1, 6, 7, 8)
+console.log(`The greatest number is: ${maxNumber}`)
+
+console.log(`======================================================================================`)
