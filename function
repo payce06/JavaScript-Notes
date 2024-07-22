@@ -1,0 +1,52 @@
+function Subtract(a, b){
+    const sub = a - b
+    return sub
+}
+    
+const num1 = 10
+const num2 = 5
+const minus = Subtract(num1, num2)
+console.log(`${minus}`)
+
+console.log(`=======================================================================================`)
+
+// Important Notes
+// Scoping
+// Any variable declared inside a function is local scope.
+// Any variable declared outside the function is global scope.
+
+function Squared(a){
+    const square = a * a
+    return square
+}
+const num1 = 7
+const result= Squared(num1)
+console.log(`${result}`)
+
+console.log(`===================================================================`)
+
+function Squared(a){
+    const square = a * a
+    return square
+}
+const num1 = 7
+const result= Squared(num1)
+console.log(`${result}`)
+
+for(let i = 1; i <= 10; i++){
+    console.log(`The square of number ${i} is: ${Squared(i)}`)
+}
+
+console.log(`===================================================================================`)
+
+const mlbTeams = ["Pittsburgh Pirates", "New York Mets", "Philadelphia Phillies"]
+function sayThankYou(name){
+    console.log(`Thank you, ${name}`)
+}
+function sayHi(name){
+    console.log(`Hi, ${name}`)
+    sayThankYou(name)
+}
+for(let i = 0; i < mlbTeams.length; i++){
+    sayHi(mlbTeams[i])
+}
