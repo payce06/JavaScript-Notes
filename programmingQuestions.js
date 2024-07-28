@@ -65,3 +65,37 @@ for(let i = 1; i < colors.length; i++){
 }
   console.log(`The longest color is: ${minLength} which is string name: ${minColor}`)
 
+console.log(`===========================================================================`)
+
+// const stringA = "Payce Grossman"
+// You will need to create a function called countVowels
+// This function is going to take one argument (that is the string to be checked)
+// It counts the occurence of the vowels ("a", "e", "i", "o", "u")
+// It returns the number of vowels in a string
+
+
+// Hint: first of all create another string by converting the given string toLowercase
+// Then create a variable called counter. initialize it to 0.
+// Hint2: then loop through the string (that means one chara
+// Hint3: As you loop, see if the current character is a vowel or not
+// if yes, then increase the counter += 1
+// finally after the loop is complete, return the counter
+
+
+
+function countVowels(checkString){
+    let str1 = checkString.toLowerCase()
+    let counter = 0
+    for(let i = 0; i < str1.length; i++){
+        const ch = str1[i]
+        if(ch == "a" || ch == "e" || ch == "i" || ch == "o" || ch == "u"){
+            counter = counter + 1
+        }
+    }
+    return counter
+}
+
+const strA = "Payce Grossman"
+
+const result = countVowels(strA)
+console.log(`The number of vowels in strA are ${result}`)
