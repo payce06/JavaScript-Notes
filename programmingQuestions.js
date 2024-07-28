@@ -99,3 +99,38 @@ const strA = "Payce Grossman"
 
 const result = countVowels(strA)
 console.log(`The number of vowels in strA are ${result}`)
+
+console.log(`=========================================================================`)
+
+// Task: You will create a function that will take on argument.
+// That arugment is an array of numbers
+// You will double the numbers present in the array one at a time.
+// And then you will return the sum of the doubled array
+
+// For instance:
+// If your function is passed an array: [5, 6, 9]
+// It is going to double all the numbers = [10, 12, 18] and find its sum,
+// which is 10+12+18=40 and return 40 as the value
+
+// Name the function as sumDouble
+// Hint: one arguement that is an array to be passed in the function
+// Create a sum variable that starts at 0
+// Then loop through the elements in the array
+// Then inside the loop extract the currentElement
+// Then sum = sum + (currentElement * 2)
+
+
+
+function sumDouble(arrayPassed){
+    let sumVariable = 0
+    
+    for(let i = 0; i < arrayPassed.length; i++){
+        const currElement = arrayPassed[i]
+        sumVariable = sumVariable + (currElement * 2)
+    }
+    return sumVariable
+}
+const array1 = [1, 5, 7, 2, 6]
+const result = sumDouble(array1)
+
+console.log(`The variable sum doubled is: ${result}`)
