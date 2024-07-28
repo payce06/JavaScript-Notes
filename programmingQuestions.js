@@ -134,3 +134,58 @@ const array1 = [1, 5, 7, 2, 6]
 const result = sumDouble(array1)
 
 console.log(`The variable sum doubled is: ${result}`)
+console.log(`=================================================================================`)
+
+// You will have to write a function that taken an array as an input
+// And return another array as an output
+
+// For instance:
+// If it gets: ["Payce", "Grossman", "is", "a", "great", "learner"]
+// It should return [5, 8, 2, 1, 5, 7]
+// Hint:
+// Inside the function
+// Create another empty array. This is where you will push the length of each elements one at a time.
+// Now loop through the array that was passed.
+// Store the currentElement in a variable
+// Create another variable called currLength that will store the length of the current element
+// Then push the currLength into your empty array that you created before the for loop. 
+// Once the for loop is done, return the array
+
+function arrayToNumbers(calculate){
+    const array1 = []
+    for(let i = 0; i < calculate.length; i++){
+    const currElement = calculate[i]
+    const currLength = currElement.length
+    array1.push(currLength)
+    }
+    return array1
+}
+const stringArrays = ["Payce", "Grossman", "is", "a", "great", "learner"]
+const arrayNumbers = arrayToNumbers(stringArrays)
+const result = arrayNumbers
+
+console.log(`The result: ${result}`)
+console.log(`========================================================================`)
+
+// I will give you an array. Each of the element of that array is a number
+// You dont need to return anything from that array.
+// All you need to do is find the number of even and odd numbers and 
+// print the counts
+
+function countEvenOdd(array1){
+    let countEven = 0
+    let countOdd = 0
+    for(let i = 0; i < array1.length; i++){
+        currElement = array1[i]
+        if(currElement % 2 == 0){
+        countEven = countEven + 1
+        } else {
+            countOdd = countOdd + 1
+        }
+    }
+     console.log(`Count Even: ${countEven}`)
+     console.log(`Count Odd: ${countOdd}`)
+     return
+}
+const array = [1, 3, 5, 7, 2, 4, 6, 8, 10, 12, 14]
+countEvenOdd(array)
