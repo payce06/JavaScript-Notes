@@ -210,3 +210,38 @@ const strB = "pop"
 console.log(isAPalendrome(strA))
 console.log(isAPalendrome(strB))
 console.log(`=======================================================================`)
+
+// You are given a sting in a function
+// You need to count the occurence of each character in that string
+// and print them
+// Eg: paaycee
+// p: 1
+// a: 2
+// y: 1
+// c: 1
+// e: 2
+
+function countChars(checkStr) {
+    const counter = {}
+
+    // paayce
+    for (let i = 0; i < checkStr.length; i++) {
+        const currentChar = checkStr[i]
+        if (!counter[currentChar]) {
+            counter[currentChar] = 0
+            console.log(`Adding a key: ${currentChar}. The value set for it is 0.`)
+            console.log(`[Y] Current state of the counter: ${JSON.stringify(counter)}`)
+        }
+       
+        counter[currentChar] += 1
+        console.log(`[Z] Current state of the counter: ${JSON.stringify(counter)}`)
+    }
+}
+
+
+
+
+
+const strA = "paaycee"
+countChars(strA)
+console.log(`=============================================================================`)
