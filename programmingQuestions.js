@@ -189,3 +189,24 @@ function countEvenOdd(array1){
 }
 const array = [1, 3, 5, 7, 2, 4, 6, 8, 10, 12, 14]
 countEvenOdd(array)
+console.log(`========================================================================`)
+
+function isAPalendrome(checkStr){
+    let revStr = ""
+    for(let i = checkStr.length - 1; i >= 0; i--){
+        revStr += checkStr[i]
+    }
+    if(revStr == checkStr){
+        return true 
+        } else {
+        return false
+        }
+    
+}
+
+const strA = "pole"
+const strB = "pop"
+
+console.log(isAPalendrome(strA))
+console.log(isAPalendrome(strB))
+console.log(`=======================================================================`)
