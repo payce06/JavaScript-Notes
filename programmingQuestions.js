@@ -267,10 +267,38 @@ console.log(`==========================================`)
 
 // Write a function to convert a string to lowercase.
 function strToLowercase(toLowercase){
-    return toLowerCase
+    return toLowercase
 }
 const strC = "payce"
 const result3 = strToLowercase(strC.toLowerCase())
 console.log(`The string to lowercase: ${result3}`)
 console.log(`======================================`)
+
+// Write a function that takes an array and returns the first element.
+function takeElement(takenFirstElement){
+    return takenFirstElement
+}
+const array1 = [1, 2, 4, 6, 8, 0]
+const result4 = takeElement(array1[0])
+console.log(`The first element in array1: ${result4}`)
+console.log(`=============================================`)
+
+// Write a function that takes an array and returns the last element.
+function takeLastElement(lastElementTaken){
+    return lastElementTaken
+}
+const array2 = [3, 38, 8, 5, 42, 7, 20]
+const result5 = takeLastElement(array2[6])
+console.log(`The last element in array2: ${result5}`)
+console.log(`============================================`)
+
+// Write a function that adds an element to the end of an array.
+function addElement(elementAdd){
+    return elementAdd
+}
+
+const array3 = [3, 6, 8, 3, 7, 3]
+const result6 = addElement(array3.push(5))
+console.log(`The added element in array3 shown: ${array3}`)
+console.log(`=========================================`)
 
