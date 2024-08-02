@@ -302,3 +302,30 @@ const result6 = addElement(array3.push(5))
 console.log(`The added element in array3 shown: ${array3}`)
 console.log(`=========================================`)
 
+// Write a function that removes the last element from an array.
+function removeElement(lastElementRemove){
+    return lastElementRemove
+}
+const array4 = [2, 5, 3, 8, 1, 9, 0]
+const result7 = removeElement(array4.splice(6, 6))
+console.log(`The array with the last element removed: ${array4}`)
+console.log(`==========================================`)
+
+// Write a function that adds an element to the beginning of an array.
+function addElement(elementAddedToBeginning){
+    return elementAddedToBeginning
+}
+const array5 = [4, 6, 2, 6, 3, 2, 6]
+const result8 = addElement(array5.unshift(4))
+console.log(`The array with the add element at the beginning: ${array5}`)
+console.log(`=============================================`)
+
+// Write a function that removes the first element from an array.
+function removeFirstElement(firstElementRemoved){
+    return firstElementRemoved
+}
+
+const array6 = [1, 7, 43, 7, 2, 6, 34]
+const result9 = removeFirstElement(array6.shift(0))
+console.log(`The first element in array6 removed: ${array6}`)
+console.log(`===========================================`)
