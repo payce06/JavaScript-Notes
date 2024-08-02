@@ -245,3 +245,32 @@ function countChars(checkStr) {
 const strA = "paaycee"
 countChars(strA)
 console.log(`=============================================================================`)
+
+// Write a function that takes a string and returns its length.
+function returnLength(measureString){
+    return measureString
+}
+
+const strA = "Payce"
+const result = returnLength(strA.length)
+console.log(`The length of strA: ${result}`)
+console.log(`==========================================`)
+
+// Write a function to convert a string to uppercase.
+function strToUppercase(toUppercase){
+    return toUppercase
+}
+const strB = "payce"
+const result2 = strToUppercase(strB.toUpperCase())
+console.log(`The string to uppercase: ${result2}`)
+console.log(`==========================================`)
+
+// Write a function to convert a string to lowercase.
+function strToLowercase(toLowercase){
+    return toLowerCase
+}
+const strC = "payce"
+const result3 = strToLowercase(strC.toLowerCase())
+console.log(`The string to lowercase: ${result3}`)
+console.log(`======================================`)
+
