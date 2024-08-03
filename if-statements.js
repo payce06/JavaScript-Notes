@@ -45,3 +45,68 @@ if(a < b && c < b){
 } else {
     console.log(`There is not one greatest number.`)
 }
+
+console.log(`===========================================================`)
+
+// Write a function that checks if a number is positive and returns true if it is, otherwise false.
+function numberPositive(num){
+    if(num >= 1){
+        return true
+        } else {
+            return false
+        }
+}
+const str1 = 6
+console.log(numberPositive(str1))
+console.log(`======================================`)
+
+// Write a function that checks if a number is less than 10 and returns "Too small" if true, otherwise "Just right".
+function numberLessThanTen(checkNumber){
+    if(checkNumber < 10){
+        return "Too Small"
+        } else {
+            return "Just Right"
+        }
+    }
+const str2 = 5
+console.log(numberLessThanTen(str2))
+console.log(`==========================================`)
+
+// Write a function that checks if a string is equal to "hello" and returns true if it is, otherwise false.
+function checksStringEqualToHello(checkString){
+    if(checkString = "hello"){
+        return "True"
+        } else {
+            return "False"
+        }
+    }
+
+const str3 = "hello"
+console.log(checksStringEqualToHello(str3))
+console.log(`===================================`)
+
+// Write a function that checks if a number is divisible by 5 and returns true if it is, otherwise false.
+function numberDivisibleByFive(checksNumberForFive){
+    if(checksNumberForFive % 5 == 0){
+        return "True"
+    } else {
+        return "False"
+    }
+}
+
+const str4 = 10
+console.log(numberDivisibleByFive(str4))
+console.log(`=========================================`)
+
+// Write a function that returns "Adult" if age is 18 or above, and "Minor" if below 18.
+function isAdultOrNot(checksAge){
+    if(checksAge >= 18){
+        return "Adult"
+    } else {
+        return "Minor"
+    }
+}
+
+str5 = 5
+console.log(isAdultOrNot(str5))
+console.log(`============================================`)
