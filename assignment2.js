@@ -187,3 +187,27 @@ function printMultiplicationTable(Table){
 const inputNumber = 5
 printMultiplicationTable(inputNumber)
 console.log(`============================================`)
+
+function patternPrinting(pattern){
+    for(let i = 1; i <= 4; i++){
+        let stars = ""
+        for(let j = 1; j <= i; j++){
+        stars += "*"
+        }
+        console.log(`${stars}`)
+    }
+}
+patternPrinting()
+console.log(`================================================`)
+
+function patternPrinted(starPattern){
+    for(let i = 4; i >= 1; i--){
+        let starShapes = ""
+        for(let j = 1; j <= i; j++){
+            starShapes += "*"
+        }
+        console.log(`${starShapes}`)
+    }
+}
+patternPrinted()
+console.log(`================================================`)
