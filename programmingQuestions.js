@@ -258,74 +258,79 @@ console.log(`==========================================`)
 
 // Write a function to convert a string to uppercase.
 function strToUppercase(toUppercase){
-    return toUppercase
+    return toUppercase.toUpperCase()
 }
 const strB = "payce"
-const result2 = strToUppercase(strB.toUpperCase())
+const result2 = strToUppercase(strB)
 console.log(`The string to uppercase: ${result2}`)
 console.log(`==========================================`)
 
 // Write a function to convert a string to lowercase.
 function strToLowercase(toLowercase){
-    return toLowercase
+    return toLowercase.toLowerCase()
 }
 const strC = "payce"
-const result3 = strToLowercase(strC.toLowerCase())
+const result3 = strToLowercase(strC)
 console.log(`The string to lowercase: ${result3}`)
 console.log(`======================================`)
 
 // Write a function that takes an array and returns the first element.
 function takeElement(takenFirstElement){
-    return takenFirstElement
+    return takenFirstElement[0]
 }
 const array1 = [1, 2, 4, 6, 8, 0]
-const result4 = takeElement(array1[0])
+const result4 = takeElement(array1)
 console.log(`The first element in array1: ${result4}`)
 console.log(`=============================================`)
 
 // Write a function that takes an array and returns the last element.
 function takeLastElement(lastElementTaken){
-    return lastElementTaken
+    return lastElementTaken[lastElementTaken.length - 1]
 }
 const array2 = [3, 38, 8, 5, 42, 7, 20]
-const result5 = takeLastElement(array2[6])
+const result5 = takeLastElement(array2)
 console.log(`The last element in array2: ${result5}`)
 console.log(`============================================`)
 
 // Write a function that adds an element to the end of an array.
 function addElement(elementAdd){
+    elementAdd.push(5)
     return elementAdd
 }
 
 const array3 = [3, 6, 8, 3, 7, 3]
-const result6 = addElement(array3.push(5))
-console.log(`The added element in array3 shown: ${array3}`)
+const result6 = addElement(array3)
+console.log(`The added element in array3 shown: ${result6}`)
 console.log(`=========================================`)
 
 // Write a function that removes the last element from an array.
 function removeElement(lastElementRemove){
+    lastElementRemove.splice(lastElementRemove.length -1)
     return lastElementRemove
 }
 const array4 = [2, 5, 3, 8, 1, 9, 0]
-const result7 = removeElement(array4.splice(6, 6))
-console.log(`The array with the last element removed: ${array4}`)
+const result7 = removeElement(array4)
+console.log(`The array with the last element removed: ${result7}`)
 console.log(`==========================================`)
+
 
 // Write a function that adds an element to the beginning of an array.
 function addElement(elementAddedToBeginning){
+    elementAddedToBeginnning = elementAddedToBeginning.unshift(4)
     return elementAddedToBeginning
 }
 const array5 = [4, 6, 2, 6, 3, 2, 6]
-const result8 = addElement(array5.unshift(4))
-console.log(`The array with the add element at the beginning: ${array5}`)
+const result8 = addElement(array5)
+console.log(`The array with the added element at the beginning: ${result8}`)
 console.log(`=============================================`)
 
 // Write a function that removes the first element from an array.
 function removeFirstElement(firstElementRemoved){
+    firstElementRemoved.shift(0)
     return firstElementRemoved
 }
 
 const array6 = [1, 7, 43, 7, 2, 6, 34]
-const result9 = removeFirstElement(array6.shift(0))
-console.log(`The first element in array6 removed: ${array6}`)
+const result9 = removeFirstElement(array6)
+console.log(`The first element in array6 removed: ${result9}`)
 console.log(`===========================================`)
