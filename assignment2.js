@@ -144,3 +144,46 @@ const grade = 80
 const result5 = returnGrade(grade)
 console.log(`The grade based on the score: ${result5}`)
 console.log(`=======================================`)
+
+// Loops
+// Write a function that prints the even numbers from 1 to 10.
+function evenNumbers(){
+    for(let i = 1; i <= 10; i++){
+        if(i % 2 == 0){
+            console.log(`${i}`)
+        }
+    }
+}
+evenNumbers()
+console.log(`====================================`)
+
+// Write a function that prints the odd numbers from 1 to 10.
+function oddNumbers(){
+    for(let i = 0; i <= 10; i++){
+        if(i % 2 == 1){
+            console.log(`${i}`)
+        }
+    }
+}
+oddNumbers()
+console.log(`====================================`)
+
+// Write a function that prints the numbers from 10 to 1.
+function printNumbersRevers(){
+    for(let i = 10; i > 0; i--){
+        console.log(`The numbers 1-10 printed in reverse: ${i}`)
+    }
+}
+printNumbersRevers()
+console.log(`=====================================`)
+
+// Write a function that prints the multiplication table of a given number.
+function printMultiplicationTable(Table){
+    for(let i = 0; i <= 10; i++){
+        const result = Table * i
+        console.log(`${Table} * ${i} = ${result}`)
+    }
+}
+const inputNumber = 5
+printMultiplicationTable(inputNumber)
+console.log(`============================================`)
