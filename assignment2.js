@@ -249,4 +249,42 @@ function reverString(str){
 const str2 = "payce"
 const result2 = reverString(str2)
 console.log(`The string reversed: ${result2}`)
+console.log(`=========================================`
+
+    // Write a function that takes an array and returns its length.
+function arrayLength(arr){
+    return arr.length
+}
+array1 = [1, 5, 2, 6, 3, 4]
+const result1 = arrayLength(array1)
+console.log(`The array's length: ${result1}`)
+console.log(`======================================`)
+
+// Write a function that takes a string and returns it repeated 3 times.
+function repeatString(str){
+        return str.repeat(3)
+}
+str1 = "Hello"
+const result2 = repeatString(str1)
+console.log(`The string repeated 3 times: ${result2}`)
+console.log(`============================================`)
+
+// Write a function that takes a number and returns its square.
+function returnSquare(a){
+    const square = a * a
+    return square
+}
+const number1 = 3
+const result3 = returnSquare(number1)
+console.log(`The number squared: ${result3}`)
+console.log(`=========================================`)
+
+// Write a function that takes a number and returns its cube.
+function cubedNumber(a){
+    const cubed = a * a * a
+    return cubed
+}
+const num2 = 4
+const result4 = cubedNumber(num2)
+console.log(`The number cubed ${result4}`)
 console.log(`=========================================`)
