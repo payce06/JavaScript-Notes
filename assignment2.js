@@ -211,3 +211,42 @@ function patternPrinted(starPattern){
 }
 patternPrinted()
 console.log(`================================================`)
+
+// String Methods
+// Write a function that capitalizes the first letter of each word in a string.
+
+function capitalizeFirstLetters(str){
+    let splitVals = str.split(" ")
+    let resultStr = ""
+    for(let i = 0; i < splitVals.length; i++){
+        const current = splitVals[i]
+        const firstLetter = current[0].toUpperCase()
+        const remainingLetters = current.slice(1, current.length)
+        const currentCap = firstLetter + remainingLetters
+        resultStr += currentCap
+        resultStr += " "
+    
+    }
+    return resultStr
+}
+const str1 = "this is a sentence."
+const result1 = capitalizeFirstLetters(str1)
+console.log(`The final result: ${result1}`)
+console.log(`=========================================`)
+
+
+
+// Write a function that reverses a string.
+function reverString(str){
+    let revStr = ""
+    for(let i = str.length -1; i >= 0; i--){
+    const currentChar = str[i]
+    revStr += currentChar
+    }
+    return revStr
+}
+
+const str2 = "payce"
+const result2 = reverString(str2)
+console.log(`The string reversed: ${result2}`)
+console.log(`=========================================`)
