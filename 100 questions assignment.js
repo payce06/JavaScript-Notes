@@ -55,3 +55,66 @@ const num1 = 4
 const result3 = multFactorial(num1)
 console.log(`The number's factorial: ${result3}`)
 console.log(`===================================================`)
+
+// Write a function to reverse the elements of an array using a for loop.
+function revArray(arr){
+    let result = []
+    for(let i = arr.length -1; i >= 0; i--){
+        result.push(arr[i])
+    }
+    return result
+}
+const arr1 = [7, 5, 3, 6, 9]
+const result4 = revArray(arr1)
+console.log(`The array reversed: ${result4}`)
+console.log(`=======================================================`)
+
+// Write a function to check if an array is sorted in ascending order using a for loop.
+function sortedArray(arr){
+    for(let i = 0; i <= arr.length; i++){
+        if(arr[i] < arr[i -1]){
+            return false
+        }
+    }
+    return true
+}
+const arr1 = [3, 6, 7, 10, 9]
+const result5 = sortedArray(arr1)
+console.log(`Array sorted ${result5}`)
+console.log(`==================================================`)
+
+// 3, 5, 10, 2, 6, 8
+
+// Whats the length of this array?
+// 6
+
+// Index
+// arr[0] = 3
+// arr[1] = 5
+// arr[2] = 10
+// arr[3] = 2
+// arr[4] = 6
+// arr[5] = 8 and 5 is length - 1. This is where you should stop.
+// arr[6] = NaN
+
+
+// Two ways to deal with this
+
+// Either you
+// for(let i = 0; i < arr.length; i++)
+
+// Or you
+// for(let i = 0; i <= arr.length - 1; i++)
+
+// Write a function that finds the average of an array of numbers using a for loop.
+function averageOfArray(arr){
+    let result = 0
+    for(let i = 0; i <= arr.length -1; i++){
+        result = result + arr[i]
+    }
+    const average = result / arr.length
+    return average
+}
+const arr1 = [8, 5, 3, 7, 3, 7]
+const result6 = averageOfArray(arr1)
+console.log(`The average of the array: ${result6}`)
