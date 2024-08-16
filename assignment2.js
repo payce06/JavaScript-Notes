@@ -288,3 +288,4 @@ const num2 = 4
 const result4 = cubedNumber(num2)
 console.log(`The number cubed ${result4}`)
 console.log(`=========================================`)
+
