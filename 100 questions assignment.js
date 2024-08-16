@@ -43,3 +43,15 @@ const array1 = [1, 6, 3, 6, 2, 3, 7]
 const result2 = findSumOfNumbers(array1)
 console.log(`The numbers in array added: ${result2}`)
 console.log(`================================================`)
+
+function multFactorial(num){
+    let result = 1
+    for(let i = 1; i <= num; i++){
+        result = result * i
+    }
+    return result
+}
+const num1 = 4
+const result3 = multFactorial(num1)
+console.log(`The number's factorial: ${result3}`)
+console.log(`===================================================`)
