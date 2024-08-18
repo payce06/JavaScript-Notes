@@ -261,3 +261,20 @@ function findPrimesUpUntilN(N){
 const num = 229
 findPrimesUpUntilN(num)
 console.log(`==================================================`)
+
+// Write a function that finds the common elements between two arrays using a for loop.
+function findCommonElements(arr1, arr2){
+    let result = []
+    for(let i = 0; i <= arr1.length -1; i++){
+        let num = arr1[i]
+        if(arr2.includes(num)){
+            result.push(num)
+        }
+    }
+    return result
+}
+const arr1 = [7, 5, 8, 3, 7, 2]
+const arr2 = [5, 7, 2, 6, 4, 0]
+const result12 = findCommonElements(arr1, arr2)
+console.log(`The elemenets that are included in both arrays: ${result12}`)
+console.log(`=============================================`)
