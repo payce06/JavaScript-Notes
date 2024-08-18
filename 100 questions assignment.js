@@ -120,6 +120,7 @@ const result6 = averageOfArray(arr1)
 console.log(`The average of the array: ${result6}`)
 console.log(`===========================================================`)
 
+
 function mergeTwoArrays(arr1, arr2){
     let result = []
     for(let i = 0; i <= arr1.length -1; i++){
@@ -134,4 +135,31 @@ const arr1 = [5, 7, 2, 6]
 const arr2 = [7, 3, 7, 6, 3]
 const result7 = mergeTwoArrays(arr1, arr2)
 console.log(`The arrays merged: ${result7}`)
+console.log(`============================================================`)
+
+// Write a function that multiplies all the numbers in an array using a for loop.
+function multiplyNumbersInArray(arr){
+    let result = 1
+    for(let i = 0; i <= arr.length-1; i++){
+        result = result *= arr[i]
+    }
+    return result
+}
+const arr1 = [7, 7, 3, 8]
+const result8 = multiplyNumbersInArray(arr1)
+console.log(`The numbers in the array multiplied: ${result8}`)
+console.log(`============================================================`)
+
+function countEvenNumbers(arr){
+    let count = 0
+    for(let i = 0; i <= arr.length -1; i++){
+        if(arr[i] % 2 == 0){
+            count = count + 1
+        }
+    }
+    return count
+}
+const arr2 = [4, 5, 6, 3]
+const result9 = countEvenNumbers(arr2)
+console.log(`The amount of even numbers: ${result9}`)
 console.log(`============================================================`)
