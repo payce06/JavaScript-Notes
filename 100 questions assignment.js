@@ -178,3 +178,17 @@ const arr1 = [3, 0, 6, 10]
 const result1 = findLowestNumberInArray(arr1)
 console.log(`The smallest number in the array:${result1}`)
 console.log(`==============================================================`)
+
+// Write a function that concatenates all strings in an array using a for loop.
+function linkString(arr){
+    let currElement = ""
+    for(let i = 0; i <= arr.length -1; i++){
+        currElement = currElement  + arr[i] + ` `
+    }
+    return currElement
+}
+
+const arr1 = ["Hello,", "How", "Are", "You"]
+const result9 = linkString(arr1)
+console.log(`The array linked: ${result9}`)
+console.log(`================================================`)
