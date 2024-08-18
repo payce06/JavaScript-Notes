@@ -192,3 +192,19 @@ const arr1 = ["Hello,", "How", "Are", "You"]
 const result9 = linkString(arr1)
 console.log(`The array linked: ${result9}`)
 console.log(`================================================`)
+
+// Write a function to find the length of the longest word in a string using a for loop.
+function findLongestWord(str){
+    const arr = str.split(" ")
+    let longestWordLength = 0
+    for(let i = 0; i <= arr.length -1; i++){
+        if(arr[i].length > longestWordLength){
+            longestWordLength = arr[i].length
+        }
+    }
+    return longestWordLength
+}
+const str1 = "Hello How Are Youuuuuuuu Doing"
+const result10 = findLongestWord(str1)
+console.log(`The length of the longest string: ${result10}`)
+console.log(`====================================================================`)
