@@ -208,3 +208,56 @@ const str1 = "Hello How Are Youuuuuuuu Doing"
 const result10 = findLongestWord(str1)
 console.log(`The length of the longest string: ${result10}`)
 console.log(`====================================================================`)
+
+// Write a function to create a new array that contains every second element of an existing array using a for loop.
+function containEverySecondElement(arr){
+    let result = []
+    for(let i = 0; i <= arr.length -1; i++){
+        if(i % 2 == 1){
+            result.push(arr[i])
+        }
+    }
+    return result
+}
+const arr1 = [7, 8, 3, 6, 2]
+const result10 = containEverySecondElement(arr1)
+console.log(`The array printed with every second element: ${result10}`)
+console.log(`==========================================`)
+
+// Write a function to calculate the power of a number using a for loop.
+function calculatePower(number, pow){
+    let result = 1
+    for(let i = 1; i <= pow; i++){
+        result = result * number
+    }
+    return result
+}
+const num = 5
+const power = 6
+const result = calculatePower(num, power)
+console.log(`${num} to the power of ${power}: ${result}`)
+console.log(`=============================================`)
+
+// Write a function that prints all prime numbers up to n using a for loop.
+function isPrimeNum(num){
+    let isPrime = true;
+    for(let i = 2; i < num; i++){
+        if(num % i == 0){
+            isPrime = false;
+        }
+    }
+    return isPrime
+}
+
+function findPrimesUpUntilN(N){
+    for(let i = 2; i <= N; i++){
+        const numberToBeChecked = i
+        const isPrime = isPrimeNum(numberToBeChecked)
+        if(isPrime) {
+            console.log(`${numberToBeChecked} is prime`)
+        }
+    }
+}
+const num = 229
+findPrimesUpUntilN(num)
+console.log(`==================================================`)
