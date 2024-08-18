@@ -163,3 +163,18 @@ const arr2 = [4, 5, 6, 3]
 const result9 = countEvenNumbers(arr2)
 console.log(`The amount of even numbers: ${result9}`)
 console.log(`============================================================`)
+
+// Write a function to find the smallest number in an array using a for loop.
+function findLowestNumberInArray(arr){
+    let smallestNumber = arr[0]
+    for(let i = 1; i <= arr.length -1; i++){
+        if(arr[i] < smallestNumber){
+            smallestNumber = arr[i]
+        }
+    }
+    return smallestNumber
+}
+const arr1 = [3, 0, 6, 10]
+const result1 = findLowestNumberInArray(arr1)
+console.log(`The smallest number in the array:${result1}`)
+console.log(`==============================================================`)
