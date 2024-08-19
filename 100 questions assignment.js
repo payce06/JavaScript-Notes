@@ -358,3 +358,29 @@ const arr2 = [6, 7, 2, 6, 2, 6]
 const result1 = findsDifferenceBetweenTwoArrays(arr1, arr2)
 console.log(`The differences between both array1: ${arr1} and array2:${arr2} is ${result1}`)
 console.log(`=========================================`)
+
+// Write a function that returns the unique elements in an array.
+function returnUniqueElements(arr){
+    let result = []
+    for(let i = 0; i <= arr.length-1; i++){
+        if(!result.includes(arr[i])){
+            result.push(arr[i])
+        }
+    }
+    return result
+}
+const arr1 = [8, 8, 8, 8, 9, 9, 9, 2, 5,]
+const result1 = returnUniqueElements(arr1)
+console.log(`The arr that returns all the unique elements: ${result1}`)
+console.log(`=============================================`)
+
+// Write a function that returns the last element of an array.
+function returnLastElementOfAnArray(arr){
+    const lastIndex = arr.length -1
+    return arr[lastIndex]
+}
+
+const arr1 = [8, 4, 2, 7]
+const result1 = returnLastElementOfAnArray(arr1)
+console.log(`The last element of the array printed: ${result1}`)
+console.log(`===============================================`)
