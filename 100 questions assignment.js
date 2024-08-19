@@ -326,3 +326,35 @@ const num1 = 6
 const result = arrContains(arr2, num1)
 console.log(`In the array, ${arr2}, the number: ${num1}, is included: ${result}`)
 console.log(`=========================================================================`)
+
+// Write a function that finds the intersection of two arrays.
+function findsTheIntersection(arr1, arr2){
+    let result = []
+    for(let i = 0; i <= arr1.length -1; i++){
+        if(arr2.includes(arr1[i])){
+            result.push(arr1[i])
+        }
+    }
+    return result
+}
+const arr1 = [8, 7, 0, 1, 4]
+const arr2 = [0, 2, 5, 3, 7]
+const result1 = findsTheIntersection(arr1, arr2)
+console.log(`The intersection between both arr1: ${arr1} and arry2: ${arr2} is ${result1}`)
+console.log(`==========================================`)
+
+// Write a function to find the difference between two arrays.
+function findsDifferenceBetweenTwoArrays(arr1, arr2){
+    let result = []
+    for(let i = 0; i <= arr1.length -1; i++){
+        if(!arr2.includes(arr1[i])){
+            result.push(arr2[i])
+        }
+    }
+    return result
+}
+const arr1 = [8, 4, 7, 5, 7, 2]
+const arr2 = [6, 7, 2, 6, 2, 6]
+const result1 = findsDifferenceBetweenTwoArrays(arr1, arr2)
+console.log(`The differences between both array1: ${arr1} and array2:${arr2} is ${result1}`)
+console.log(`=========================================`)
