@@ -278,3 +278,51 @@ const arr2 = [5, 7, 2, 6, 4, 0]
 const result12 = findCommonElements(arr1, arr2)
 console.log(`The elemenets that are included in both arrays: ${result12}`)
 console.log(`=============================================`)
+
+// Write a function to find the maximum number in an array.
+function findMaximum(arr){
+    let currMaximum = arr[0]
+    for(let i = 1; i <= arr.length -1; i++){
+        if(arr[i] > currMaximum){
+            currMaximum = arr[i]
+        }
+    }
+    return currMaximum
+}
+
+const arr1 = [-1, 6, -3, -10, 11, 40]
+const result1 = findMaximum(arr1)
+console.log(`The maximum number in the array: ${result1}`)
+console.log(`==============================================================`)
+
+// Write a function to remove duplicates from an array.
+function removeDuplicates(arr){
+    let result = []
+    for(let i = 0; i <= arr.length -1; i++){
+        if(!result.includes(arr[i])){
+            result.push(arr[i])
+        }
+    }
+    return result
+}
+
+const arr2 = [3, 11, 10, 18, 2, 2,]
+const result2 = removeDuplicates(arr2)
+console.log(`The duplicates in the array: ${result2}`)
+console.log(`==========================================`)
+
+// Write a function that checks if an array contains a specific value.
+function arrContains(arr, num){
+    for(let i = 0; i <= arr.length -1; i++){
+        if(arr[i] == num){
+            return true
+        }
+    }
+    return false
+}
+
+const arr2 = [4, 7, 6, 8, 1, 6]
+const num1 = 6
+const result = arrContains(arr2, num1)
+console.log(`In the array, ${arr2}, the number: ${num1}, is included: ${result}`)
+console.log(`=========================================================================`)
