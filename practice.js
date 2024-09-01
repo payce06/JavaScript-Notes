@@ -171,3 +171,85 @@ function makeOdd(phrase){
         return phrase + " "
     }
 }
+
+// math
+
+// Write a function that takes in three numbers and returns the highest number.
+
+function highestNumber(num1, num2, num3){
+    if(num1 > num2 && num1 > num3){
+        return num1
+    } else if(num2 > num1 && num2 > num3){
+        return num2
+    } else if(num3 > num1 && num3 > num2){
+        return num3
+    }
+}
+
+// Write a function that takes in a number and either a + or a -. The function should return the consecutive number either before (+) or after (-) the number.
+
+function consNum(number, symbol) {
+	const plus = number + 1
+	const minus = number - 1
+	if(symbol == "+"){
+	    return plus
+	} else {
+	    return minus
+	}
+}
+
+// Write a function that takes in two numbers and checks if the sum of the two numbers is less than 100. The function should return either true or false.
+
+function lessThan100(a, b) {
+	if(a + b < 100){
+	    return true
+	} else {
+	    return false
+    }
+}
+
+// Write a function that takes in two numbers that represent the height and the width of of a rectangle and returns the perimeter.
+
+function perimeter(height,width){
+	return (height * 2) + (width * 2)
+}
+
+// Write a function that takes in an integer and checks if the number is even. The function should return either true or false.
+
+function isEvenNumber(num) {
+    if(num % 2 == 0){
+        return true
+    } else {
+        return false
+    }
+}
+
+// Write a function that takes in two integers. The function will check if the first integer is divisible by the second integer and return either true or false.
+
+function divisibleByNumber(n, d) {
+    if(n % d == 0){
+        return true
+    } else {
+        return false
+    }
+}
+
+// Lines are perpendicular if their slopes are negative reciprocals. Write a function that takes in the numerators and denominators of the slope of two lines and checks if the lines are perpendicular. The function should return either true or false.
+
+// Given two fractions, a⁄b = c⁄d , lines are perpendicular if a⁄b = - d⁄c .
+
+function linesArePerp(a, b, c, d) {
+    if(a/b == -d/c){
+        return true
+    } else {
+        return false
+    }
+}
+
+// Write a function that takes in two numbers that represent the legs of a triangle and returns the length of the hypotenuse by using the Pythagorean theorem.
+
+// The Pythagorean Theorem is a2 + b2 = c2.
+
+function pythagorean(a, b) {
+	return Math.sqrt(a**2 + b**2)
+}
