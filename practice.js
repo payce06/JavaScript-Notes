@@ -63,3 +63,24 @@ function era(er, ip) {
 	return (er * 9) / ip
 }
 
+// Functions
+
+// Write a function named sayHello that does not take in any parameters and returns the string, “Hello, world!”
+function sayHello(){
+    return "Hello, world!"
+}
+
+// Write the function identity which takes an input x and returns that input.
+
+function identity(x){
+    return x
+}
+
+// Write a function that receives two arguments, a and b. Return the second argument.
+
+function twoArgs(a, b) {
+    return b
+}
+
+
+
