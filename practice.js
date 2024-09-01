@@ -253,3 +253,80 @@ function linesArePerp(a, b, c, d) {
 function pythagorean(a, b) {
 	return Math.sqrt(a**2 + b**2)
 }
+
+// Array
+
+// Given an array, return the length of that array.
+
+function length(array) {
+    return array.length
+}
+
+// Given an array containing any kind of elements, return the first element.
+
+function first(array) {
+    return array[0]
+}
+
+// Write this function reverse that will return an array in reversed order.
+
+// For example: reverse([1, 2, 3]) => [3, 2, 1]
+
+function reverse(array) {
+    let result = []
+    for(let i = array.length -1; i >= 0; i--){
+        result.push(array[i])
+    }
+    return result
+}
+
+// Write the function extend which takes an array and an additional element and returns an array with the additional element at the end of the array.
+
+// For example, extend([1,2,3], 4) => [1,2,3,4]
+
+function extend(array, el) {
+    array.push(el)
+    return array
+}
+
+// Write the function repeat that takes an array and returns that array repeated.
+
+// For example: repeat(["echo"]) => ["echo", "echo"]
+
+function repeat(array) {
+    let result = []
+    for(let i = 0; i <= array.length -1; i++){
+        result.push(array[i])
+    }
+    for(let i = 0; i <= array.length -1; i++){
+        result.push(array[i])
+        
+    }
+    return result
+}
+
+// Write the function evens that takes an array and returns an array of the even elements.
+
+function evens(array) {
+    let result = []
+    for(let i = 0; i <= array.length -1; i++){
+        if(array[i] % 2 == 0){
+            result.push(array[i])
+        }
+    }
+    return result
+}
+
+// Write the function contains that will return true if an array contains the element el.
+
+// For example:contains(['glorp', 'glop', 'gloop'], 'gloop') => true
+
+function contains(array, el) {
+    return array.includes(el)
+}
+
+// Write the function last that will return the last element of array. You can assume that array has at least one element.
+
+function last(array) {
+    return array[array.length -1]
+}
