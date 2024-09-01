@@ -82,5 +82,92 @@ function twoArgs(a, b) {
     return b
 }
 
+// Strings
+
+// Write a function that takes a string as a parameter and returns that string in all capital letters.
+
+function yelling(phrase){
+    const phraseToUpperCase = phrase.toUpperCase()
+    return phraseToUpperCase
+}
+
+// Write a function that takes in a string and returns that same string with an “echo”. The returned string should include the contents of the original string twice, with a space in between.
+
+function echo(phrase){
+    return phrase + " " + phrase
+}
+
+// Write a function that takes in a string and returns a string that triples the original. The returned string should include the contents of the original string three times, with a space in between.
+
+function repeatThree(phrase){
+    let result = ""
+    for(let i = 1; i <= 3; i++){
+        if(i == 3){
+            result = result + phrase
+        } else {
+            result = result + phrase + " "
+        }
+    }
+    return result
+}
+
+// Write a function that takes in a word or phrase. Return true if that word or phrase is all uppercase, otherwise return false.
 
 
+function isUppercase(phrase){
+    if(phrase == phrase.toUpperCase()){
+        return true
+    } else {
+        return false
+    }
+}
+
+// Write a function that takes in a word or phrase. Return true if that word or phrase is all lowercase, otherwise return false.
+
+function isLowercase(phrase){
+    if(phrase == phrase.toLowerCase()){
+        return true
+    } else {
+        return false
+    }
+}
+const phrase1 = "hello"
+isLowercase(phrase1)
+
+// Write a function that takes a string and a key as input. You should return true if the key exists in the index, false otherwise. Assume both the string and key have a length > 0
+
+function findKey(phrase, key){
+    if(phrase.includes(key)){
+        return true
+    } else {
+        return false
+    }
+}
+
+// In this exercise, you are given an input string and a key. The key will be lowercase, but you need to return the index value where that key is found as an uppercase value. If it is not found, return -1.
+
+function findUpperKey(phrase, key){
+    const newKey = key.toUpperCase()
+    return phrase.indexOf(newKey)
+}
+
+// In this exercise, you are given a word or phrase. If the length of that word or phrase is odd, add a space to the end and return it. If it is even, just return it as is.
+
+
+function makeEven(phrase){
+    if(phrase.length % 2 == 0){
+        return phrase
+    } else {
+        return phrase + " "
+    }
+}
+
+// In this exercise, you are given a word or phrase. If the length of that word or phrase is even, add a space to the end and return it. If it is odd, just return it as is.
+
+function makeOdd(phrase){
+    if(phrase.length % 2 == 1){
+        return phrase
+    } else {
+        return phrase + " "
+    }
+}
