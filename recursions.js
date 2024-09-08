@@ -121,3 +121,16 @@ calculateSum(5)
 // 15
 
 console.log(`===================================================================`)
+
+function calculateFactorial(num){
+    if(num < 1){
+        return 1
+    }
+    const factorial = num * calculateFactorial(num - 1)
+    return factorial
+}
+
+const num1 = 5
+console.log(calculateFactorial(num1))
+
+console.log(`==================================================================`)
