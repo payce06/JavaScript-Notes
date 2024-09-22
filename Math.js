@@ -173,6 +173,7 @@ function doubleEverything(array) {
 
 console.log(`==========================================================`)
 
+
 // Write the function negative which takes an array of numbers and returns an array where all of those numbers are negative.
 
 // For example,
@@ -223,5 +224,32 @@ function repeats(array) {
 
 console.log(`=======================================================================`)
 
+// Write the function doubleTheOdds which doubles any odd numbers in an array.
 
+// You can assume there are only numbers in the array, but not that the array isn’t empty.
+
+// doubleTheOdds([1, 2, 3]) => [2, 2, 6]
+
+function doubleTheOdds(array) {
+    for(let i = 0; i <= array.length -1; i++){
+        if(array[i] % 2 != 0){
+            array[i] = array[i] * 2
+        }
+    }
+    return array
+}
+
+console.log(`=================================================================`)
+
+// Write noRepeats which returns an array without repeated elements. You’ll need to keep everything in the same order!
+
+// noRepeats([1,2,3,1]) => [1,2,3]
+// noRepeats(['a','b','a', 'c', 'a']) => ['a', 'b', 'c']
+
+Write noRepeats which returns an array without repeated elements. You’ll need to keep everything in the same order!
+
+noRepeats([1,2,3,1]) => [1,2,3]
+noRepeats(['a','b','a', 'c', 'a']) => ['a', 'b', 'c']
+
+console.log(`==================================================================================`)
 
