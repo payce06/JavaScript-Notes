@@ -246,7 +246,7 @@ console.log(`=================================================================`)
 // noRepeats([1,2,3,1]) => [1,2,3]
 // noRepeats(['a','b','a', 'c', 'a']) => ['a', 'b', 'c']
 
-Write noRepeats which returns an array without repeated elements. You’ll need to keep everything in the same order!
+// Write noRepeats which returns an array without repeated elements. You’ll need to keep everything in the same order!
 
 noRepeats([1,2,3,1]) => [1,2,3]
 noRepeats(['a','b','a', 'c', 'a']) => ['a', 'b', 'c']
