@@ -253,3 +253,76 @@ noRepeats(['a','b','a', 'c', 'a']) => ['a', 'b', 'c']
 
 console.log(`==================================================================================`)
 
+// Create a recursive function that returns whether a string is a palindome!
+
+// Example: hannah => true
+// Input: hannah
+// Expected Output: true
+
+function isPalindrome(str){
+    if(str.length == 0 || str.length == 1){
+        return true
+    }
+    const leftIndex = 0
+    const rightIndex = str.length -1
+    return str[leftIndex] == str[rightIndex] && isPalindrome(str.slice(leftIndex +1, rightIndex))
+}
+
+console.log(isPalindrome("abracarba"))
+
+console.log(`==========================================================================`)
+
+// Write a recursive function that counts the number of consonants there are in a string!
+
+// Example: hello world => 7
+// Input: hello world
+// Expected Output: 7
+
+function numConsonants(str) {
+    if(str.length == 0){
+        return 0
+    }
+    let firstLetter = str[0]
+    let consonantCount = 0
+    if(firstLetter != "a" && firstLetter 
+    != "e" && firstLetter != "i" && firstLetter 
+    != "o" && firstLetter != "u" && firstLetter != " "){
+        consonantCount = 1
+    }
+    consonantCount = consonantCount + numConsonants(str.slice(1, str.length))
+    return consonantCount
+}
+
+console.log(`======================================================================`)
+
+// Write a recursive function that calculates the length of a string! You cannot use .length. Assume length of string is at least 1.
+
+// Example: hello => 5
+// Input: hello
+// Expected Output: 5
+
+function strLength(str) {
+    if(str.length == 0){
+        return 0
+    }
+    return 1 + strLength(str.slice(1, str.length))
+}
+
+console.log(`===================================================================`)
+
+// Write a recursive function that reverses a string!
+
+// Example: hello => olleh
+// Input: hello
+// Expected Output: olleh
+
+function reverseString(str) {
+    if(str.length == 1){
+        return str[0]
+    }
+    const currReverseString = reverseString(str.slice(1, str.length)) + str[0]
+    return currReverseString
+}
+
+console.log(`========================================================================`)
+
