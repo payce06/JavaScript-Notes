@@ -40,3 +40,45 @@ function calculator(num1, operator, num2) {
 
 console.log(`===============================================================================`)
 
+// Write a function that takes in a number that represents the side of a square and the diameter of an inscribed circle. Return the area of the square that is outside of the circle.
+
+function shadedArea(r) {
+	return (r) * (r) - (Math.PI * r / 2 * r /2)
+}
+
+console.log(`================================================================================`)
+
+// Write a function that takes in two numbers that represent the angles of a triangle and checks if the triangle is a right triangle. The function should return either true or false.
+
+function isRightTriangle(angle1, angle2) {
+    if(angle1 == 90){
+        return true
+    }
+    if(angle2 == 90){
+        return true
+    }
+	if(angle1 + angle2 == 90){
+	    return true
+	} else {
+	    return false
+	}
+}
+
+console.log(`===============================================================================`)
+
+// Write a function that takes in two numbers that represent hours worked and hourly pay. Overtime pay is 1.5 times more than regular pay. The function should return the total amount paid for the hours entered.
+
+function totalPay(hours, payPerHour) {
+    let normalHours = hours
+    let overtimeHours = 0
+    if(hours > 40){
+        normalHours = 40
+        overtimeHours = hours - normalHours
+    }
+    let overtimePay = overtimeHours * payPerHour * 1.5
+    let normalPay = normalHours * payPerHour
+    return normalPay + overtimePay
+}
+
+console.log(`================================================================================`)
+
