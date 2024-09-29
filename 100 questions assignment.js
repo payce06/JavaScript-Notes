@@ -384,3 +384,19 @@ const arr1 = [8, 4, 2, 7]
 const result1 = returnLastElementOfAnArray(arr1)
 console.log(`The last element of the array printed: ${result1}`)
 console.log(`===============================================`)
+
+function countVowels(string){
+    let counter = 0
+    for(let i = 0; i <= string.length -1; i++){
+    if(string[i] == `a` || string[i] == `e` || string[i] == `i` || string[i] == `o` || string[i] == `u`){
+        counter++
+    }
+    }
+    return counter
+    }
+
+const string1 = "Hello, how are you"
+const result1 = countVowels(string1)
+console.log(`The number of vowels in the string: ${result1}`)
+console.log(`================================================`)
+
