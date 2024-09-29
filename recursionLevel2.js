@@ -166,3 +166,23 @@ const arr1 = [4, 2, 6, 2, 8, 7, 10]
 console.log(linearSearch(arr1, num1))
 
 console.log(`=======================================================================================`)
+
+function binarySearchHelper(arr, num, left, right){
+    if(left > right){
+        return -1
+}
+        
+        const middleIndex = Math.floor((left + right) / 2)
+        const middleElement = arr[middleIndex]
+        if(num == middleElement){
+            return "Found!"
+        } else if(num < middleElement){
+            return binarySearchHelper(arr, num, left, middleIndex -1)
+        } else if(num > middleElement){
+            return binarySearchHelper(arr, num, middleIndex +1, right)
+        }
+}
+
+function binarySearch(arr, num){
+    return binarySearchHelper(arr, num, 0, arr.length -1)
+}
