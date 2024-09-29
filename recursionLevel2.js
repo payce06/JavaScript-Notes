@@ -148,3 +148,21 @@ const num1 = 45
 console.log(binarySearcher(arr1, num1))
 
 console.log(`===================================================================================`)
+
+
+
+function linearSearch(arr, num){
+    for(let i = 0; i <= arr.length -1; i++){
+        const currentElement = arr[i]
+        if(currentElement == num){
+            return "Found!"
+        }
+    }
+    return 1
+}
+const num1 = 6
+const arr1 = [4, 2, 6, 2, 8, 7, 10]
+
+console.log(linearSearch(arr1, num1))
+
+console.log(`=======================================================================================`)
