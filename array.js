@@ -64,3 +64,15 @@ function addElement(arr, num){
     arr.push(num)
     return arr
 }
+
+// Write a function that removes the last element from an array.
+function removeLastElement(arr){
+    arr.pop()
+    return arr
+}
+
+// Write a function that finds the index of a specific value in an array.
+function findIndex(arr, num){
+    const index = arr.indexOf(num)
+    return index
+}
