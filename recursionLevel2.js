@@ -121,3 +121,30 @@ const num1 = 5
 console.log(binarySearcher(arr1, num1))
 
 console.log(`==============================================================================`)
+
+// Binary Searcher Attempt 3 Incorrect
+
+function binarySearcher(arr, num){
+    let left = 0
+    let right = arr.length -1
+    
+    while(num < right){
+        const midIndex = Math.floor((left + right) / 2)
+        const middleElement = arr[midIndex]
+        if(num == middleElement){
+            return "Found!"
+        } else if(num < middleElement){
+            midIndex = right -1
+        } else if(num > middleElement){
+            midIndex = left +1
+        }
+    }
+    return 1
+}
+
+const arr1 = [1, 2, 3, 45, 56, 67, 78, 109, 324]
+const num1 = 45
+
+console.log(binarySearcher(arr1, num1))
+
+console.log(`===================================================================================`)
