@@ -46,3 +46,21 @@ console.log(`==================================================`)
     array1.map((element, index) => {
         console.log(`The element in index ${index} is ${element}`)
     })
+
+    // Write a function that returns the first element of an array.
+function returnFirstElement(arr){
+    const firstElement = arr[0]
+    return firstElement
+}
+
+// Write a function that returns the last element of an array.
+function returnLastElement(arr){
+    const lastElement = arr[arr.length -1]
+    return lastElement
+}
+
+// Write a function that adds a new element to the end of an array.
+function addElement(arr, num){
+    arr.push(num)
+    return arr
+}
