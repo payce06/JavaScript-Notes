@@ -76,3 +76,25 @@ function findIndex(arr, num){
     const index = arr.indexOf(num)
     return index
 }
+
+// Write a function that converts a string to uppercase.
+
+function convertUpperCase(str){
+    const strConvertedUpper = str.toUpperCase()
+    return strConverted
+}
+
+
+// Write a function that converts a string to lowercase.
+
+function convertLowerCase(str){
+    const strConvertedLower = str.toLowerCase()
+    return strConvertedLower
+}
+
+// Write a function that returns the first character of a string.
+
+function takeFirstCharacter(str){
+    const firstCharacter = str[0]
+    return firstCharacter
+}
