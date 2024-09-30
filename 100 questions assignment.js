@@ -399,4 +399,3 @@ const string1 = "Hello, how are you"
 const result1 = countVowels(string1)
 console.log(`The number of vowels in the string: ${result1}`)
 console.log(`================================================`)
-

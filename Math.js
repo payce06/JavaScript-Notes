@@ -326,3 +326,7 @@ function reverseString(str) {
 
 console.log(`========================================================================`)
 
+// Write a function that adds two numbers and returns the result.
+function addTwoNumbers(a, b){
+    return a + b
+}
