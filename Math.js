@@ -345,3 +345,18 @@ function multiplyTwoNumbers(a, b){
 function divideTwoNums(a, b){
     return a / b
 }
+
+// Write a function that calculates the remainder of a division of two numbers.
+function remainderOfTwoNums(a, b){
+    return a % b
+}
+
+// Write a function that takes two numbers and returns the larger number.
+
+function returnLargerNum(numA, numB){
+    if(numA > numB){
+        return numA
+    }else {
+        return numB
+    }
+}

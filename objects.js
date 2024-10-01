@@ -50,3 +50,12 @@ for (let i = 0; i < string.length; i++) {
 console.log(object)
 
 console.log(`==================================================================================`)
+
+// Create an object representing a person with properties for name and age. Write a function that returns the person's name.
+function objectPerson(){
+    const person = {
+        name: "John",
+        age: 40,
+    }
+    return person.name
+}
