@@ -330,3 +330,18 @@ console.log(`===================================================================
 function addTwoNumbers(a, b){
     return a + b
 }
+
+// Write a function that subtracts one number from another and returns the result.
+function subtractOneNumberFromOther(a, b){
+    return a - b
+}
+
+// Write a function that multiplies two numbers and returns the result.
+function multiplyTwoNumbers(a, b){
+    return a * b
+}
+
+// Write a function that divides one number by another and returns the result.
+function divideTwoNums(a, b){
+    return a / b
+}
