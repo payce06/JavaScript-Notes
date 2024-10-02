@@ -83,3 +83,22 @@ function addProperty(obj, key, val){
     obj[key] = val
     return obj
 }
+
+// Write a function that removes a property from an object. The function should take the object and the property name as arguments.
+function removeProperty(obj, key){
+    delete obj[key]
+    return obj
+}
+
+// Create an object with properties for name, age, and email. Write a function that returns a string describing the person in the format: "Name: [name], Age: [age], Email: [email]".
+
+function formatObject(obj){
+    return `Name: ${obj.name}, Age: ${obj.age}, Email: ${obj.email}`
+}
+
+const sampObject = {
+    name: 'Sam',
+    age: 34,
+    email: 'sample@gmail.com',
+}
+console.log(formatObject(sampObject))
