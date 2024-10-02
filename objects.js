@@ -59,3 +59,27 @@ function objectPerson(){
     }
     return person.name
 }
+
+// Create an object with properties for color, make, and model of a car. Write a function that returns the value of the make property.
+
+function objectCar(){
+    const car = {
+        color: 'Blue',
+        make: '2019',
+        model: 'CyberTruck',
+    }
+    return car.make
+}
+
+// Write a function that takes an object and a property name and returns the value of that property.
+
+function returnObjectValue(obj, key){
+    return obj[key]
+}
+
+// Write a function that adds a new property to an object. The function should take the object, the property name, and the value as arguments.
+
+function addProperty(obj, key, val){
+    obj[key] = val
+    return obj
+}
