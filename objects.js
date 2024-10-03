@@ -128,3 +128,29 @@ function copyProperties(obj1, obj2){
     }
     return obj2
 }
+
+// Write a function that counts the number of properties in an object.(Long and simple way)
+
+function countNumberProperties(obj){
+    let counter = 0
+    for(let key in obj){
+        counter += 1
+    }
+    return counter
+}
+
+// Write a function that counts the number of properties in an object.(short and smart way)
+
+function countProperties(obj){
+    return Object.keys(obj).length
+}
+
+// Create an object representing a person with properties for name, age, and occupation.
+function objectOccipation(obj){
+    const occupation = {
+        name: 'Patrice'
+        age: 30
+        occupation: 'NewsReporter'
+    }
+    return occupation
+}
