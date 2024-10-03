@@ -102,3 +102,29 @@ const sampObject = {
     email: 'sample@gmail.com',
 }
 console.log(formatObject(sampObject))
+
+// Write a function that checks if a given object has a specific property.
+function checkSpecificProperty(obj, property){
+    return obj.hasOwnProperty(property)
+}
+
+// Write a function that merges two objects into one.
+function mergeObjects(obj1, obj2){
+    const merged = {}
+    for(let key in obj1){
+        merged[key] = obj1[key]
+    }
+    for(let key in obj2){
+        merged[key] = obj2[key]
+    }
+    return merged
+}
+
+// Write a function that copies all properties from one object to another.
+function copyProperties(obj1, obj2){
+    // we will loop through obj1 and copy everything from obj1 to obj2
+    for(let key in obj1){
+        obj2[key] = obj1[key]
+    }
+    return obj2
+}
