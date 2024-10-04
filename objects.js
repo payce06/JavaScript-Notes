@@ -154,3 +154,15 @@ function objectOccipation(obj){
     }
     return occupation
 }
+
+// Write a function that returns the value of the name property of an object.
+function returnName(obj){
+    return obj.name
+}
+
+// Write a function that updates the age property of an object.
+
+function updatesAgeProperty(obj, newAge){
+    obj.age = newAge
+    return obj
+}
