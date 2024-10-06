@@ -76,3 +76,44 @@ function findIndex(arr, num){
     const index = arr.indexOf(num)
     return index
 }
+
+// Write a function to find the maximum number in an array.
+
+function findMaximum(arr){
+    if(arr.length == 0){
+        return undefined
+    }
+    let currentMaximum = arr[0]
+    for(let i = 1; i <= arr.length -1; i++){
+        if(arr[i] > currentMaximum){
+            currentMaximum = arr[i]
+        }
+}
+return currentMaximum
+}
+
+// Write a function to remove duplicates from an array.
+function removeDuplicates(arr){
+    let result = []
+    for(let i = 0; i <= arr.length -1; i++){
+        const currentElement = arr[i]
+        if(!result.includes(arr[i])){
+            result.push(currentElement)
+        }
+    }
+    return result
+}
+
+// Write a function to remove duplicates from an object.
+function removeObjectDuplicates(arr){
+    const tempObj = {}
+    let result = []
+    for(let i = 0; i <= arr.length -1; i++){
+        const currentElement = arr[i]
+        if(!tempObj[currentElement]){
+            tempObj[currentElement] = 100
+            result.push(currentElement)
+        }
+    }
+    return result
+}
