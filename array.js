@@ -137,3 +137,23 @@ function sortArrayReversed(arr){
     let sortedReversedArray = arr.sort().reverse()
     return sortedReversedArray
 }
+
+
+// Write a function that returns the last element of an array.
+
+function returnLastElement(arr){
+    return arr.length -1
+}
+
+// Write a function to find the median of an array of numbers.
+
+function findMedian(arr){
+    const sortedArray = arr.sort()
+    const midIndex = Math.floor(sortedArray.length / 2)
+    if(arr.length % 2 != 0){
+        return sortedArray[midIndex]
+    } else{
+        return (sortedArray[midIndex] + sortedArray[midIndex -1]) / 2
+    }
+}
+
