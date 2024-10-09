@@ -157,3 +157,26 @@ function findMedian(arr){
     }
 }
 
+// Write a function that checks if an array contains a specific value.
+function checkArray(num, arr){
+    for(let i = 0; i <= arr.length -1; i++){
+        if(arr[i] == num){
+            return true
+            }
+        }
+    return false
+}
+
+function checkArray2(num, arr){
+    return arr.includes(num)
+}
+
+function checkArray3(num, arr){
+    const index = arr.findIndex(num)
+    if(index != -1){
+        return true
+    } else {
+        return false
+    }
+}
+
