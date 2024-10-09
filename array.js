@@ -117,3 +117,23 @@ function removeObjectDuplicates(arr){
     }
     return result
 }
+
+// Write a function that takes an array of numbers and returns a new array with each number squared.
+
+function squareElementsInArray(arr){
+    for(let i = 0; i <= arr.length -1; i++){
+        arr[i] = arr[i]* arr[i]
+    }
+    return arr
+}
+
+// Write a function to sort an array of strings in alphabetical order.
+function sortArray(arr){
+    let sortedArray = arr.sort()
+    return sortedArray
+}
+
+function sortArrayReversed(arr){
+    let sortedReversedArray = arr.sort().reverse()
+    return sortedReversedArray
+}
