@@ -117,3 +117,35 @@ function findFirstMatch(arr, name){
 const arr = [{name: "Payce", score: 100}, {name: "Einstein", score: 70}, {name: "Enstien", score: 50}]
 
 console.log(findFirstMatch(arr, "Payce"))
+
+// Write a function that takes an array of objects and returns a new array with an additional property added to each object.
+function addGradesToObjects(arr){
+    for(let i = 0; i <= arr.length -1; i++){
+        const currObject = arr[i]
+        if(currObject.score > 70){
+            currObject.grade = "Pass"
+        } else {
+            currObject.grade = "Fail"
+        }
+        arr[i] = currObject
+    }
+    return arr
+}
+
+const arr = [{name: "Payce", score: 100}, {name: "Einstein", score: 90}, {name: "Newton", score: 43}]
+
+console.log(addGradesToObjects(arr))
+
+// Write a function to count the number of unique values for a specific property in an array of objects.
+function countNumUniqueScores(arr){
+    const setA = new Set()
+    for(let i = 0; i <= arr.length -1; i++){
+        const currObject = arr[i]
+        setA.add(currObject.score)
+    }
+    return setA.size
+}
+
+const arr = [{name: "Payce", score: 100}, {name: "Newton", score: 45}, {name: "Carl",score: 45}]
+
+console.log(countNumUniqueScores(arr))
