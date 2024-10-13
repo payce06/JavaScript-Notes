@@ -41,6 +41,8 @@ console.log(takeLowestValue(score))
 
 console.log(`===========================================================================`)
 
+// Write a function that takes an array of objects and returns the object with the longest string for a specific property.
+
 function returnLongestName(arr){
     const firstObject = arr[0]
     let longestLength = firstObject.name.length
