@@ -180,3 +180,42 @@ function checkArray3(num, arr){
     }
 }
 
+// Write a function to flatten a nested array (array of arrays).
+
+// Concat function
+let array1 = [1, 2, 3, 4]
+let array2 = [5, 6, 7, 8]
+array1 = array1.concat(array2)
+console.log(array1)
+
+// Array.isArray() function
+const string1 = "Payce"
+const array11 = [1, 2, 3, 4]
+console.log(Array.isArray(string1))
+console.log(Array.isArray(array11))
+
+
+// What if?
+// I am given an array as shown below
+const array3 = [1, 2, [3, 4, [5, 6, [7]]]]
+// The result should be something like this
+// [1, 2, 3, 4, 5, 6, 7]
+
+function flattenNestedArray(arr){
+    let result = []
+    
+    if(arr.length === 0){
+        return []
+    }
+
+    for(let i = 0; i <= arr.length -1; i++){
+        const currElement = arr[i]
+        if(Array.isArray(currElement)){
+            result = result.concat(flattenNestedArray(currElement))
+        } else {
+            result.push(currElement)
+        }
+    }
+    return result
+}
+

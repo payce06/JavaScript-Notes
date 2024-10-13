@@ -42,3 +42,5 @@ const setList = new Set([1, 2, 3, 4, 5, 6, 7])
 // Length or size of a set
 const setA = new Set([1, 2, 3])
 console.log(setA.size)
+
+
