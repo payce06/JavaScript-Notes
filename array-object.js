@@ -149,3 +149,13 @@ function countNumUniqueScores(arr){
 const arr = [{name: "Payce", score: 100}, {name: "Newton", score: 45}, {name: "Carl",score: 45}]
 
 console.log(countNumUniqueScores(arr))
+
+// Write a function that takes an array of objects and returns a new array with a specific property removed from each object.
+function removePropertyObjects(arr){
+    for(let i = 0; i <= arr.length -1; i++){
+        const currObject = arr[i]
+        delete currObject.score
+        arr[i] = currObject
+    }
+    return arr
+}

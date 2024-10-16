@@ -219,3 +219,14 @@ function flattenNestedArray(arr){
     return result
 }
 
+// Write a function that finds the intersection of two arrays.
+function findIntersection(arr1, arr2){
+    const result = []
+    for(let i = 0; i <= arr1.length -1; i++){
+        const arr1CurrentElement = arr1[i]
+        if(arr2.includes(arr1CurrentElement)){
+            result.push(arr1CurrentElement)
+        }
+    }
+    return result
+}
