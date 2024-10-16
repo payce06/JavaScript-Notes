@@ -193,3 +193,32 @@ function findSumObjectScores(arr){
 const nameScore = [{name:"Payce", score: 100}, {name: "Ethan", score: 35}, {name: "London", score: 90}]
 console.log(findSumObjectScores(nameScore))
 
+// Write a function to find the average value of a specific property in an array of objects.
+
+function findAverageOfObjectScores(arr){
+    let sumScores = 0
+    for(let i = 0; i <= arr.length -1; i++){
+        const currObject = arr[i]
+        sumScores += currObject.score
+    }
+    return sumScores / arr.length
+}
+
+const nameScore = [{name:"Payce", score: 100}, {name: "Ethan", score: 35}, {name: "London", score: 90}]
+console.log(findAverageOfObjectScores(nameScore))
+
+console.log(`========================================================`)
+
+// Write a function that takes an array of objects and returns an array of the unique values for a specific property.
+function returnArrayUniqueValues(arr){
+    const scoresSet = new Set()
+    for(let i = 0; i <= arr.length -1; i++){
+        const currObject = arr[i]
+        scoresSet.add(currObject.score)
+    }
+    const listScores = Array.from(scoresSet)
+    return listScores
+}
+
+const array = [{name: "Payce", score: 100}, {name: "Newton", score: 99}, {name: "Gaby", score: 102}]
+console.log(returnArrayUniqueValues(array))
