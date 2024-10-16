@@ -159,3 +159,37 @@ function removePropertyObjects(arr){
     }
     return arr
 }
+
+const nameScore = [{name:"Payce", score: 100}, {name: "Ethan", score: 35}, {name: "London", score: 90}]
+console.log(removePropertyObjects(nameScore))
+console.log(`===========================================================`)
+
+// Write a function that takes an array of objects and returns a new array with only the objects that have a specific property.
+function returnsSpecificKey(arr, key){
+    let result = []
+    for(let i = 0; i <= arr.length -1; i++){
+        const currObject = arr[i]
+        if(currObject.hasOwnProperty(key)){
+            result.push(currObject)
+        }
+    }
+    return result
+}
+
+const arr = [{name: "Payce", profession: "CS"}, {name: "MiltonHurricanes", profession: "Hockey"}, {name: "Abby"}]
+
+console.log(returnsSpecificKey(arr, "profession"))
+
+// Write a function that finds the sum of a specific property in an array of objects.
+function findSumObjectScores(arr){
+    let sumScores = 0
+    for(let i = 0; i <= arr.length -1; i++){
+        const currObject = arr[i]
+        sumScores += currObject.score
+    }
+    return sumScores
+}
+
+const nameScore = [{name:"Payce", score: 100}, {name: "Ethan", score: 35}, {name: "London", score: 90}]
+console.log(findSumObjectScores(nameScore))
+
