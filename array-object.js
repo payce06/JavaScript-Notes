@@ -222,3 +222,48 @@ function returnArrayUniqueValues(arr){
 
 const array = [{name: "Payce", score: 100}, {name: "Newton", score: 99}, {name: "Gaby", score: 102}]
 console.log(returnArrayUniqueValues(array))
+
+// Write a function that takes an array of objects and returns the number of objects with a specific property value.--
+function filterObjectsByValue(arr, value){
+    let result = []
+    for(let i = 0; i <= arr.length -1; i++){
+        const currObject = arr[i]
+        if(currObject.profession === value){
+            result.push(currObject)
+        }
+    }
+    return result
+}
+
+const array = [{name: "Payce", profession: "CS"}, {name: "Nikita", profession: "CS"}, {name: "OldPayce", profession: "Architect"}]
+console.log(filterObjectsByValue(array, "Architect"))
+console.log(`====================================================’)
+
+// Difference between == and ===
+
+// == (Loose equality)
+console.log(5 == '5') // True
+console.log(null == undefined) // True
+
+
+// === (Strict equality)
+console.log(5 === '5') // False
+console.log(null === undefined)
+
+console.log(`========================================`)
+
+// Write a function that takes an array of objects and returns a new array with only the objects that have a specific property.--
+function returnsSpecificKey(arr, key){
+    let result = []
+    for(let i = 0; i <= arr.length -1; i++){
+        const currObject = arr[i]
+        if(currObject.hasOwnProperty(key)){
+            result.push(currObject)
+        }
+    }
+    return result
+}
+
+const arr = [{name: "Payce", profession: "CS"}, {name: "MiltonHurricanes", profession: "Hockey"}, {name: "Abby"}]
+
+console.log(returnsSpecificKey(arr, "profession"))
