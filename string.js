@@ -210,3 +210,28 @@ function findLongestWord(str){
     }
     return currMaxWord
 }
+
+// Write a function to repeat a string n times.
+function repeatStringNTimes(str, n){
+    let resultStr = ""
+    for(let i = 0; i < n; i++){
+        resultStr += str
+    }
+    return resultStr
+}
+
+console.log(repeatStringNTimes("dog", 3))
+
+// Write a function to check if a string contains another string.
+function checkIfStringContainsAnotherString(str1, str2){
+    return str1.includes(str2)
+}
+console.log(checkIfStringContainsAnotherString("Payce", "yce"))
+
+function countNumberWordsString(str){
+    let result = 0
+    const wordsSplit = str.split(" ")
+    return wordsSplit.length
+}
+
+console.log(countNumberWordsString("Hello, How Are You"))
