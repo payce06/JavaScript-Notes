@@ -82,3 +82,44 @@ function takeFirstCharacter(str){
     const firstCharacter = str[0]
     return firstCharacter
 }
+
+// Write a function that returns the last character of a string.
+function returnLastCharacter(str){
+    const lastCharacter = str[str.length -1]
+    return lastCharacter
+    
+}
+
+// Write a function that replaces all occurrences of "a" with "e" in a string.
+
+function replaceAWithE(inputString) {
+    let result = ''
+    for(let i = 0; i <= inputString.length -1; i++){
+        if(inputString[i] == 'a'){
+            result += 'e'
+        } else {
+            result += inputString[i]
+        }
+    }
+    return result
+}
+
+// Write a function to check if a given string is a palindrome.
+
+function isPalindromeWhile(str){
+    let i = 0
+    let j = str.length -1
+    
+    while(i<j){
+        const leftChar = str[i]
+        const rightChar = str[j]
+        if(leftChar != rightChar){
+            return false
+        }
+        i++;
+        j--;
+    }
+    return true
+}
+
+console.log(isPalindromeWhile("payyap"))
