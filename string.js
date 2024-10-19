@@ -182,3 +182,31 @@ function capitalizeFirstLetterOfEachWord(str){
 }
 
 console.log(capitalizeFirstLetterOfEachWord("payce likes programming"))
+
+// Write a function to reverse the words in a string.
+function reverseString(str){
+    let reversedStr = ""
+    for(let i = str.length -1; i >= 0; i--){
+        const currChar = str[i]
+        reversedStr += currChar
+    }
+    return reversedStr
+}
+
+console.log(reverseString("Hello"))
+
+// Write a function to find the longest word in a string.
+function findLongestWord(str){
+    const words = str.split(" ")
+    console.log(words)
+    const firstWord = words[0]
+    let currMaxWord = firstWord
+    for(let i = 1; i <= words.length -1; i++){
+        const currWord = words[i]
+        if(currWord.length > currMaxWord.length){
+            currMaxWord = currWord
+            console.log(`Curr Max Word has been changed to ${currMaxWord}`)
+        }
+    }
+    return currMaxWord
+}
