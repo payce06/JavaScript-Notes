@@ -123,3 +123,28 @@ function isPalindromeWhile(str){
 }
 
 console.log(isPalindromeWhile("payyap"))
+
+function isPalendromeForLoop(str){
+    for(let i = 0, j = str.length -1; i < j; i++, j--){
+        const leftChar = str[i]
+        const rightChar = str[j]
+        if(leftChar != rightChar){
+            return false
+        }
+    }
+    return true
+}
+
+console.log(isPalindromeWhile("payyap"))
+
+function isPalendromeForRecursion(str, i , j){
+    if(i >= j){
+        return true
+    }
+    const leftChar = str[i]
+    const rightChar = str[j]
+    return leftChar == rightChar && isPalendromeForRecursion(str, ++i, --J)
+    
+}
+
+console.log(isPalindromeWhile("payce"))
