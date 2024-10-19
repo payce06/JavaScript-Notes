@@ -148,3 +148,37 @@ function isPalendromeForRecursion(str, i , j){
 }
 
 console.log(isPalindromeWhile("payce"))
+
+// Write a function to count the number of vowels in a string.
+
+function countNumberOfVowels(str){
+    let result = 0
+    for(let i = 0; i <= str.length -1; i++){
+        if(str[i] == "a" || str[i] == "A" || str[i] == "e" || str[i] == "E" || str[i] == "I" || str[i] == "i" || str[i] == "o" || str[i] == "O" || str[i] == "u" ||str[i] == "U"){
+            result = result += 1
+        }
+    }
+    return result
+}
+
+console.log(countNumberOfVowels("aeiouaeiouaeiouaeiouaeiouaeiou"))
+
+// Write a function to capitalize the first letter of each word in a string.
+
+function capitalizeFirstLetterOfEachWord(str){
+    let splitVals = str.split(" ")
+    let result = ""
+    for(let i = 0; i <= splitVals.length -1; i++){
+        const current = splitVals[i]
+        const firstLetter = current[0].toUpperCase()
+        const remainingLetters = current.slice(1, current.length)
+        const finalWord = firstLetter + remainingLetters
+        result += finalWord
+        if(i != splitVals.length -1){
+            result += " "
+        }
+    }
+    return result
+}
+
+console.log(capitalizeFirstLetterOfEachWord("payce likes programming"))
