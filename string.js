@@ -235,3 +235,56 @@ function countNumberWordsString(str){
 }
 
 console.log(countNumberWordsString("Hello, How Are You"))
+
+// Write a function to convert a string to kebab case.
+function stringToKebabCase(str){
+    str = str.toLowerCase()
+    const words = str.split(" ")
+    let result = ""
+    for(let i = 0; i <= words.length -1; i++){
+        const currWord = words[i]
+        result += currWord
+        if(i != words.length -1){
+            result += "-"
+        }
+    }
+    return result
+}
+
+console.log(stringToKebabCase("Hello How Do You Do"))
+
+// Write a function to convert a string to camel case.
+function stringToCamelCase(str){
+    str = str.toLowerCase()
+    const words = str.split(" ")
+    let result = ""
+    for(let i = 0; i <= words.length -1; i++){
+        const currWord = words[i]
+        let firstLetter = currWord[0]
+        let remainingLetters = currWord.slice(1, currWord.length)
+        if(i != 0){
+            firstLetter = firstLetter.toUpperCase()
+        }
+        const modifiedWord = firstLetter + remainingLetters
+        result += modifiedWord
+    }
+    return result
+}
+console.log(stringToCamelCase("Payce Hello How Are You"))
+
+// Write a function to convert a string to snake case.
+function stringToSnakeCase(str){
+    str = str.toLowerCase()
+    const words = str.split(" ")
+    let result = ""
+    for(let i = 0; i <= words.length -1; i++){
+        const currWord = words[i]
+        result += currWord
+        if(i != words.length -1){
+            result += "_"
+        }
+    }
+    return result
+}
+
+console.log(stringToSnakeCase("Payce Hello How Are You"))
