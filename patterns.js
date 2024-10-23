@@ -62,3 +62,37 @@ function reversePattern(n){
 
 reversePattern(4)
 
+// 6. Function that takes n and prints the following pattern
+// Example: n = 4
+
+// 1
+// 1 2
+// 1 2 3
+// 1 2 3 4
+
+function patternNumbers(n){
+    for(let i = 0; i < n; i++){
+        let pattern = ""
+        for(let j = 0; j < i + 1; j++){
+            pattern += (j + 1)
+        }
+        console.log(pattern)
+    }
+}
+
+patternNumbers(4)
+
+console.log(`===========================================================`)
+
+function patternReverseNumbers(n){
+    for(let i = 0; i < n; i++){
+        let pattern = ""
+        for(let j = 0; j < n - i; j++){
+            pattern += (j + 1)
+        }
+        console.log(pattern)
+    }
+}
+
+patternReverseNumbers(4)
+
